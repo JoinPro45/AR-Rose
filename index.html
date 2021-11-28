@@ -7,12 +7,12 @@
 <body style='margin : 0px; overflow: scroll;'>
 
   <a-scene embedded arjs>
-    <a-assets>
-      <a-asset-item id="rose" src="scene.gltf"></a-asset-item>
-    </a-assets>
-
     <a-marker preset="hiro">
-      <a-gltf-model src="#crose" scale="0.4 0.4 0.4" position="0 0 0"></a-gltf-model>
+      <a-entity
+				position="0 0 0"
+				scale="1 1 1"
+				gltf-model="obj/scene.gltf"
+			  ></a-entity>
     </a-marker>
 
     <a-entity camera></a-entity>
